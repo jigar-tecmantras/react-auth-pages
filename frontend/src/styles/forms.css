@@ -1,0 +1,139 @@
+.auth-form {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: 0 25px 45px rgba(15, 23, 42, 0.2);
+  max-width: 420px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  color: #0f172a;
+}
+
+.form-head h2 {
+  margin: 0;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+.form-head p {
+  margin: 0.35rem 0 0;
+  color: #475569;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.form-field label {
+  font-weight: 500;
+  color: #0f172a;
+}
+
+.form-field input[type='text'],
+.form-field input[type='email'],
+.form-field input[type='password'] {
+  border: 1px solid #cbd5f5;
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  font-size: 1rem;
+  background: #f8fafc;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-field input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+  background: #fff;
+}
+
+.checkbox-field .checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-weight: 500;
+  color: #0f172a;
+}
+
+.checkbox-wrapper input {
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 5px;
+  border: 1px solid #cbd5f5;
+  accent-color: #6366f1;
+}
+
+.form-actions {
+  margin-top: 0.2rem;
+}
+
+.form-actions button {
+  width: 100%;
+  padding: 0.9rem 0;
+  border-radius: 14px;
+  border: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.form-actions button.primary {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #ffffff;
+  box-shadow: 0 15px 25px rgba(79, 70, 229, 0.35);
+}
+
+.form-actions button.primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 20px 30px rgba(79, 70, 229, 0.35);
+}
+
+.form-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.field-error {
+  color: #dc2626;
+  font-size: 0.85rem;
+}
+
+.field-hint {
+  font-size: 0.85rem;
+  color: #475569;
+}
+
+.form-foot {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.link-button {
+  background: transparent;
+  border: none;
+  color: #4f46e5;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.status {
+  margin: 0;
+  padding: 0.5rem 0.75rem;
+  border-radius: 12px;
+  background: #ecfeff;
+  border: 1px solid #22d3ee;
+  color: #0f172a;
+  font-size: 0.95rem;
+}
+
+.status.success {
+  background: #dcfce7;
+  border-color: #22c55e;
+}
