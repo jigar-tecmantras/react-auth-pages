@@ -1,0 +1,98 @@
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.3), transparent 45%),
+    linear-gradient(180deg, #0f172a, #0f172a 55%, #111827 100%);
+  color: #e2e8f0;
+}
+
+.hero-panel {
+  padding: 4rem 3rem;
+  background: linear-gradient(135deg, #111827, #1f2937 60%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.hero-panel h1 {
+  font-size: 2.9rem;
+  margin: 0;
+}
+
+.hero-panel .eyebrow {
+  font-size: 0.9rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #a5b4fc;
+}
+
+.hero-panel .hero-copy {
+  max-width: 360px;
+  line-height: 1.6;
+  color: #cbd5f5;
+}
+
+.hero-panel ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  color: #e2e8f0;
+}
+
+.hero-panel li {
+  font-size: 0.95rem;
+}
+
+.form-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 3rem;
+}
+
+.form-toggle {
+  display: flex;
+  gap: 0.65rem;
+  margin-bottom: 1.5rem;
+  background: rgba(15, 23, 42, 0.2);
+  border-radius: 999px;
+  padding: 0.35rem;
+  width: max-content;
+}
+
+.form-toggle button {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  color: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.form-toggle button.active {
+  background: #0f172a;
+  color: #f8fafc;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.4);
+}
+
+.form-frame {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .hero-panel {
+    padding: 3rem 2.5rem;
+  }
+
+  .form-panel {
+    padding: 2rem;
+  }
+}
