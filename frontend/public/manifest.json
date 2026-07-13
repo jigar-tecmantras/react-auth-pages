@@ -1,0 +1,9 @@
+{
+  "short_name": "AuthApp",
+  "name": "React Login & Register Pages",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0f172a",
+  "background_color": "#0f172a",
+  "description": "Responsive login and registration UI with inline validation."
+}
